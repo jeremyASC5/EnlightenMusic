@@ -1,0 +1,54 @@
+#body-Main{
+    background-image:url(https://asuevents.asu.edu/sites/default/files/music.jpg);
+
+}
+#body-theory{
+    background-image: url(http://www.mtosmt.org/gifs/bartok_overlay.png);
+    background-color:
+}
+
+.about_us{
+    color:purple;
+    text-align: center;
+    margin-top: 6%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 3px solid rgba(22, 211, 85, 0.24);
+    background-color:rgba(22, 211, 85, 0.768);
+    word-wrap: break-word;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 30px;
+}
+.mdl-layout-spacer{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+.mdl-layout__header-row{
+    background-color: purple;
+    
+}
+
+.mdl-layout__drawer{
+    font-family: 'Cormorant Garamond', serif;
+}
+.mdl-layout-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+}
+
+.mdl-nav-specific__link{
+    display: inline-block;
+    margin-left: 70px;
+    color:inherit;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.mdl-navigation__link{
+    display: inline-block;
+    margin-left: 70px;
+    color:inherit;
+    font-family: 'Cormorant Garamond', serif;
+    color: purple;
+}
