@@ -1,33 +1,54 @@
+:root{
+    font-family: 'Cormorant Garamond', serif;
+}
+body{
+    overflow-y: auto;
+}
+
 #body-Main{
     background-image:url(https://asuevents.asu.edu/sites/default/files/music.jpg);
 
 }
-#body-theory{
-    background-image: url(http://www.mtosmt.org/gifs/bartok_overlay.png);
-    background-color:
+#homepageHeader{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(128, 0, 128, 0.7);
+    word-wrap: break-word;
+    padding: 30px;
 }
 
-.about_us{
-    color:purple;
+.about_us_container{
+    color: whitesmoke;
     text-align: center;
     margin-top: 6%;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
-    border: 3px solid rgba(22, 211, 85, 0.24);
-    background-color:rgba(22, 211, 85, 0.768);
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(128, 0, 128, 0.7);
     word-wrap: break-word;
     margin-left: 20%;
     margin-right: 20%;
     padding: 30px;
 }
+#aboutUsHeader{
+    font-family: 'Cormorant Garamond', serif;
+}
+#aboutUs{
+    text-align: justify;
+    font-size: 20px;
+}
 .mdl-layout-spacer{
     text-align: center;
-    font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
 }
 .mdl-layout__header-row{
-    background-color: purple;
-    
+    background-color: rgba(128, 0, 128, 0.7);
 }
 
 .mdl-layout__drawer{
@@ -51,4 +72,11 @@
     color:inherit;
     font-family: 'Cormorant Garamond', serif;
     color: purple;
+}
+
+/*STYLESHEET SPECIFIC TO 'THEORY' PAGE*/
+
+#body-theory{
+    background-image: url(http://www.mtosmt.org/gifs/bartok_overlay.png);
+    background-color:
 }
