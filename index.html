@@ -18,52 +18,81 @@
 
 <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-          <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">𝄞nlighten Music</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer">
-            </div>
-            <!-- Navigation. We hide it in small screens. -->
-            <nav class="mdl-navigation mdl-layout--large-screen-only">
-            </nav>
-          </div>
-        </header>
-        <div class="mdl-layout__drawer">
-          <span class="mdl-layout-title">Subjects</span>
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Theory</a>
-            <a class="mdl-navigation__link" href="">Composition</a>
-            <a class="mdl-navigation__link" href="">Learning an Instrument</a>
-            <a class="mdl-navigation__link" href="">Woodwinds</a>
-            <a class="mdl-navigation__link" href="">Brass</a>
-            <a class="mdl-navigation__link" href="">Precasuion</a>
-            <a class="mdl-navigation__link" href="">Keyboards</a>
-            <a class="mdl-navigation__link" href="">Technique</a>
-            <a class="mdl-navigation__link" href="">Sheet Music</a>
-            <a class="mdl-navigation__link" href="">Music History</a>
-            <a class="mdl-navigation__link" href="">Miscellaneous</a>
-          </nav>
-        </div>
-        <main class="mdl-layout__content">
-          <h id="homepageHeader">Home</h>
-          <div class="page-content">
-              <div class="about_us_container">
-                  <h1 id="aboutUsHeader">About Us</h1>
-                    <p id="aboutUs">
-                      Often times, budding musicians need advice and 
-                      insight on certain topics–<i>fast.</i> Many professionals may not
-                      have the time to answer questions, and other amateurs
-                      may not have the experience or the answers.
-                      That's where we come in.
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">𝄞nlightenMusic</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer">
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+      </nav>
+    </div>
+  </header>
+  
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Subjects</span>
+    <nav class="mdl-navigation">
+      <ul>
+        <li><a class="mdl-navigation__link" href="">Theory</a></li>
+        <li><a class="mdl-navigation__link" href="">Composition</a></li>
+        <li><a class="mdl-navigation__link" href="">Learning an Instrument</a>
+          <ul>        
+            <li><a class="mdl-navigation__link" href="">Woodwinds</a></li>
+            <li><a class="mdl-navigation__link" href="">Brass</a></li>
+            <li><a class="mdl-navigation__link" href="">Percussion</a></li>
+            <li><a class="mdl-navigation__link" href="">Strings</a></li>
+            <li><a class="mdl-navigation__link" href="">Keyboards</a></li>
+          <ul>  
+          </li>                                                
+        <li><a class="mdl-navigation__link" href="">Technique</a></li>
+        <li><a class="mdl-navigation__link" href="">Sheet Music</a>
+          <ul>
+            <li><a class="mdl-navigation__link" href="">How to Read</a></li>
+            <li><a class="mdl-navigation__link" href="">Sight Reading Tips</a></li>
+          </ul>
+        </li>
+        <li><a class="mdl-navigation__link" href="">Music History</a></li>
+        <li><a class="mdl-navigation__link" href="">Miscellaneous</a></li>
+      <ul>
+    </nav>
+  </div>
 
-                      <b><i>EnlightenMusic</i></b> is a web app dedicated to helping
-                      these musicians build ideas off of each other to improve
-                      their craft and improve their music. No registration is
-                      required; simply write your name with every post and type away!
-                    </p>
-            </div>
+
+  <main class="mdl-layout__content">
+    <h id="homepageHeader">Home</h>
+    <div class="page-content">
+      <div class="about_us_container">
+        <h1 id="aboutUsHeader">About Us</h1>
+        <p id="aboutUs">
+          Often times, budding musicians need advice and 
+          insight on certain topics–<i>fast.</i> Many professionals may not
+          have the time to answer questions, and other amateurs
+          may not have the experience or the answers.
+          That's where we come in.
+
+          <b><i>EnlightenMusic</i></b> is a web app dedicated to helping
+          these musicians build ideas off of each other to improve
+          their craft and improve their music. No registration is
+          required; simply write your name with every post and type away!
+        </p>
+      </div>
+      <h id="meetTheFoundersHeader">Meet the Founders</h>
+      <div class="meetTheFounders_container">
+        <div class="meetJeremy_container"></div>
+          <h1 id="meetJeremyName">Jeremy Vidals</h1>
+          <img src="#">
+          <p id="meetJeremy">lorem ipsum</p>
+        </div>
+        <div class="meetJoshua_container">
+          <div class="meetJoshuaHeader">
+            <h1 id="meetJoshuaName">Joshua Feliciano</h1>
+            <img src="joshProfilePic.jpg">
+          </div>
+          <p id="meetJoshua">lorem ipsum</p>
+        </div>
+      </div>
     </div>
     </main>
          

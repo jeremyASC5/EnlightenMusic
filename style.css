@@ -14,7 +14,7 @@ body{
     color: whitesmoke;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
+    font-size: 52px;
     border: none;
     border-radius: 8px;
     background-color: rgba(128, 0, 128, 0.7);
@@ -43,6 +43,48 @@ body{
 #aboutUs{
     text-align: justify;
     font-size: 20px;
+}
+#meetTheFoundersHeader{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(128, 0, 128, 0.7);
+    word-wrap: break-word;
+    padding: 30px;
+}
+.meetJeremy_container{}
+#meetJeremyName{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 6%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(128, 0, 128, 0.7);
+    word-wrap: break-word;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 30px;
+}
+#meetJeremy{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 6%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(128, 0, 128, 0.7);
+    word-wrap: break-word;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    padding: 30px;
 }
 .mdl-layout-spacer{
     text-align: center;
@@ -80,4 +122,14 @@ body{
 #body-theory{
     background-image: url(http://www.mtosmt.org/gifs/bartok_overlay.png);
     background-color:
+}
+ 
+
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: left;    
 }
