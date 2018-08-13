@@ -102,16 +102,8 @@ body{
     font-size: 28px;
 }
 
-.mdl-nav-specific__link{
-    display: inline-block;
-    margin-left: 70px;
-    color:inherit;
-    font-family: 'Cormorant Garamond', serif;
-}
-
 .mdl-navigation__link{
     display: inline-block;
-    margin-left: 70px;
     color:inherit;
     font-family: 'Cormorant Garamond', serif;
     color: purple;
@@ -121,15 +113,5 @@ body{
 
 #body-theory{
     background-image: url(http://www.mtosmt.org/gifs/bartok_overlay.png);
-    background-color:
 }
  
-
-
-ul{
-    list-style-type: none;
-}
-
-li{
-    float: left;    
-}
