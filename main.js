@@ -14,9 +14,6 @@ for(const sublist of sublists){
     title.addEventListener("click", toggleDisplay)
 }
 
-
-
-
 const usernameElement = document.getElementById("username");
 const messageElement = document.getElementById("message");
 const button = document.getElementById("submitButton");
