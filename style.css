@@ -67,6 +67,10 @@ body{
     color: whitesmoke;
     margin-bottom: 30px;
 }
+.profilePic{
+    width: 250px;
+    height: 250px;
+}
 
 .meetJeremy_container{
     display: block;
@@ -80,8 +84,6 @@ body{
 #jeremyProfilePic{
     float: left;
     margin-right: 20px;
-    width: 250px;
-    height: 250px;
 }
 #meetJeremy{
     color: whitesmoke;
@@ -105,8 +107,6 @@ body{
 #joshuaProfilePic{
     float: left;
     margin-right: 20px;
-    width: 250px;
-    height: 250px;
 }
 #meetJoshua{
     color: whitesmoke;
@@ -128,7 +128,6 @@ ul{
 .mdl-layout__header-row{
     background-color: rgba(128, 0, 128, 0.7);
 }
-
 .mdl-layout__drawer{
     font-family: 'Cormorant Garamond', serif;
 }
@@ -150,9 +149,13 @@ ul{
         margin-top: 100px;
         margin-bottom: 100px;
     }
+    .profilePic{
+        display: block;
+    }
 }
 /*STYLESHEET SPECIFIC TO 'THEORY' PAGE*/
 
-#body-theory{
-    background-image: url(http://www.mtosmt.org/gifs/bartok_overlay.png);
+#body-Theory{
+    background-image:url(https://becomeabassist.com/wp-content/uploads/2013/05/sheet_music.jpg);
+    background-size: cover;
 }
