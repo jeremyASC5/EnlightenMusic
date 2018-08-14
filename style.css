@@ -69,6 +69,8 @@ body{
     margin-bottom: 30px;
 }
 .profilePic{
+    float: left;
+    margin-right: 20px;
     width: 250px;
     height: 250px;
 }
@@ -82,10 +84,7 @@ body{
     margin-right: 10px;
 }
 
-#jeremyProfilePic{
-    float: left;
-    margin-right: 20px;
-}
+#jeremyProfilePic{}
 #meetJeremy{
     color: whitesmoke;
     text-align: justify;
@@ -105,10 +104,7 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
-#joshuaProfilePic{
-    float: left;
-    margin-right: 20px;
-}
+#joshuaProfilePic{}
 #meetJoshua{
     color: whitesmoke;
     text-align: justify;
@@ -150,8 +146,10 @@ ul{
         margin-top: 100px;
         margin-bottom: 100px;
     }
-    .profilePic{
+    .profilePic_container{
         display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 /*STYLESHEET SPECIFIC TO 'THEORY' PAGE*/
@@ -163,5 +161,4 @@ ul{
 
 .mdl-textfield__input{
     align-content:center;
-    
 }
