@@ -146,6 +146,11 @@ ul{
         margin-top: 100px;
         margin-bottom: 100px;
     }
+    .meetTheFounders_container{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
     .profilePic_container{
         display: block;
         margin-left: auto;

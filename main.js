@@ -1,3 +1,4 @@
+//for dropdown menu
 const sublists = document.querySelectorAll(".hasSublist")
 for(const sublist of sublists){
     const title = sublist.children[0]
