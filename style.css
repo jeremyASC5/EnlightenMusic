@@ -9,12 +9,13 @@ body{
     background-image:url(https://asuevents.asu.edu/sites/default/files/music.jpg);
     background-size: cover;
 }
-#homepageHeader{
+.pageHeader{
     display: block;
     color: whitesmoke;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     font-size: 52px;
+    font-weight: bold;
     border: none;
     border-radius: 8px;
     background-color: rgba(128, 0, 128, 0.7);
@@ -158,4 +159,9 @@ ul{
 #body-Theory{
     background-image:url(https://becomeabassist.com/wp-content/uploads/2013/05/sheet_music.jpg);
     background-size: cover;
+}
+
+.mdl-textfield__input{
+    align-content:center;
+    
 }
