@@ -7,7 +7,7 @@ body{
 
 #body-Main{
     background-image:url(https://asuevents.asu.edu/sites/default/files/music.jpg);
-
+    background-size: cover;
 }
 #homepageHeader{
     display: block;
@@ -44,7 +44,7 @@ body{
     text-align: justify;
     font-size: 20px;
 }
-#meetTheFoundersHeader{
+.meetTheFounders_container{
     display: block;
     color: whitesmoke;
     text-align: center;
@@ -54,36 +54,67 @@ body{
     border-radius: 16px;
     background-color: rgba(128, 0, 128, 0.7);
     word-wrap: break-word;
-    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
 }
-.meetJeremy_container{}
-#meetJeremyName{
-    color: whitesmoke;
+
+
+#meetTheFoundersHeader{
     text-align: center;
-    margin-top: 6%;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.meetJeremy_container{
+    display: block;
+    color: whitesmoke;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    border: none;
-    border-radius: 16px;
-    background-color: rgba(128, 0, 128, 0.7);
-    word-wrap: break-word;
-    margin-left: 20%;
-    margin-right: 20%;
     padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#jeremyProfilePic{
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+    height: 250px;
 }
 #meetJeremy{
     color: whitesmoke;
-    text-align: center;
+    text-align: justify;
     margin-top: 6%;
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
-    border: none;
-    border-radius: 16px;
-    background-color: rgba(128, 0, 128, 0.7);
     word-wrap: break-word;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 5%;
+    padding: 30px;
+}
+
+.meetJoshua_container{
+    display: block;
+    color: whitesmoke;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#joshuaProfilePic{
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+    height: 250px;
+}
+#meetJoshua{
+    color: whitesmoke;
+    text-align: justify;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    word-wrap: break-word;
+    /*margin-bottom: 5%;*/
     padding: 30px;
 }
 
@@ -109,14 +140,20 @@ ul{
 
 .mdl-navigation__link{
     display: inline-block;
-    color:inherit;
+    color: initial;
     font-family: 'Cormorant Garamond', serif;
-    color: purple;
 }
-
+@media(max-width: 650px){
+    .about_us_container{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
 /*STYLESHEET SPECIFIC TO 'THEORY' PAGE*/
 
 #body-theory{
     background-image: url(http://www.mtosmt.org/gifs/bartok_overlay.png);
 }
- 

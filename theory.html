@@ -1,71 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="favicon.ico" size="32x32">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <srcipt src="main.js" defer></srcipt>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <title>EnlightenMusic</title>
+
    
 </head>
-<body id="body-theory">
+<body id="body-Main">
 
 <!-- Always shows a header, even in smaller screens. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-          <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">𝄞nlighten Music</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer">
-                About Us
-            </div>
-            <!-- Navigation. We hide it in small screens. -->
-            <nav class="mdl-navigation mdl-layout--large-screen-only">
-              <a class="mdl-navigation__link" href="">Facebook</a>
-              <a class="mdl-navigation__link" href="">Twitter</a>
-             
-            </nav>
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title" style="color: gold">𝄞nlightenMusic</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer">
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+      </nav>
+    </div>
+  </header>
+  
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Subjects</span>
+    <nav class="mdl-navigation">
+      <ul>
+        <li><a class="mdl-navigation__link" href="">Theory</a></li>
+        <li><a class="mdl-navigation__link" href="">Composition</a></li>
+        <li class="hasSublist">
+          <a class="mdl-navigation__link" href="">Learning an Instrument</a>
+          <ul>        
+            <li><a class="mdl-navigation__link" href="woodwinds.html">Woodwinds</a></li>
+            <li><a class="mdl-navigation__link" href="brass.html">Brass</a></li>
+            <li><a class="mdl-navigation__link" href="percussion.html">Percussion</a></li>
+            <li><a class="mdl-navigation__link" href="strings.html">Strings</a></li>
+            <li><a class="mdl-navigation__link" href="keys.html">Keyboards</a></li>
+          </ul>  
+        </li>                                                
+        <li><a class="mdl-navigation__link" href="">Technique</a></li>
+        <li class="hasSublist">
+          <a class="mdl-navigation__link" href="">Sheet Music</a>
+          <ul>
+            <li><a class="mdl-navigation__link" href="">How to Read</a></li>
+            <li><a class="mdl-navigation__link" href="">Sight Reading Tips</a></li>
+          </ul>
+        </li>
+        <li><a class="mdl-navigation__link" href="">Music History</a></li>
+        <li><a class="mdl-navigation__link" href="">Miscellaneous</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <main class="mdl-layout__content">
+    <h id="homepageHeader">Home</h>
+    <div class="page-content">
+      <div class="about_us_container">
+        <h1 id="aboutUsHeader">About Us</h1>
+        <p id="aboutUs">
+          Often
+        </p>
+      </div>
+      <h id="meetTheFoundersHeader">Meet the Founders</h>
+      <div class="meetTheFounders_container">
+        
           </div>
-        </header>
-        <div class="mdl-layout__drawer">
-          <span class="mdl-layout-title">Subjects</span>
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Theory</a>
-            <a class="mdl-navigation__link" href="">Composition</a>
-            <a class="mdl-navigation__link" href="">Learning an Instrument</a>
-            <a class="mdl-navigation__link" href="">Woodwinds</a>
-            <a class="mdl-navigation__link" href="">Brass</a>
-            <a class="mdl-navigation__link" href="">Precasuion</a>
-            <a class="mdl-navigation__link" href="">Keyboards</a>
-            <a class="mdl-navigation__link" href="">Technique</a>
-            <a class="mdl-navigation__link" href="">Sheet Music</a>
-            <a class="mdl-navigation__link" href="">Music History</a>
-            <a class="mdl-navigation__link" href="">Miscellaneous</a>
-          </nav>
+          <p id="meetJoshua">lorem ipsum</p>
         </div>
-        <main class="mdl-layout__content">
-
-          <div class="page-content">
-              <div class="about_us">
-Description:
-Often times, budding musicians need advice and<br> 
-insight on certain topics–fast. Many professionals may not<br>
-have the time to answer questions, and other amateurs<br>
-may not have the experience or the answers.<br>
-That's where we come in.<br>
-
-EnlightenMusic is a web app dedicated to helping<br>
-these musicians build ideas off of each other to improve<br>
-their craft and improve their music. No registration is<br>
-required; just write your name with every post and type away.
-            </div>
+      </div>
     </div>
     </main>
          
