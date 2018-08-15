@@ -213,6 +213,8 @@ grid_container>div{}
 
 #questionElement{
     background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     border-color: purple;
     box-shadow: purple;

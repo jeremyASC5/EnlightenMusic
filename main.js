@@ -77,16 +77,19 @@ database.on("child_added", doSomethingWithData);
     nameContainer.style.display = "block"
     nameContainer.style.color = "whitesmoke"
     nameContainer.style.borderBottom = "3px solid whitesmoke"
+    nameContainer.style.wordWrap = "break-word"
+    nameContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(nameContainer)
 
     entryDiv.appendChild(br)
 
     const questionContainer = document.createElement("p")
     questionContainer.className = "questionContainer"
-    questionContainer.innerHTML = `Question: ${object.question}`
+    questionContainer.innerHTML = `Message: ${object.question}`
     questionContainer.style.display = "block"
     questionContainer.style.color = "whitesmoke"
     questionContainer.style.wordWrap = "break-word"
+    questionContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(questionContainer)
 
     entryDiv.appendChild(br)
