@@ -161,7 +161,7 @@ ul{
 
 /*STYLESHEET SPECIFIC TO 'THEORY' PAGE*/
 
-#body-Theory{
+body {
     background-image:url(https://becomeabassist.com/wp-content/uploads/2013/05/sheet_music.jpg);
     background-size: cover;
 }
@@ -205,7 +205,7 @@ ul{
     background-color: rgba(255, 215, 0, 1);
     padding: 10px;
 }
-
+grid_container>div{}
 
 .submitButton:hover{
     cursor: pointer;

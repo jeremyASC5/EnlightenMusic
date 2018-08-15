@@ -16,36 +16,42 @@ for(const sublist of sublists){
 }
 //end dropdown menu
 
-const submitButton = document.querySelectorAll("submitButton")
+const forumName = decodeURI(window.location.href.split("/").slice(-1)[0].split(".")[0]);
+document.getElementById("mainHeader").innerText = forumName;
+
+const database = firebase.database().ref();
+
+const submitButton = document.querySelector(".submitButton")
 submitButton.addEventListener("click", updateDB)
+
+const usernameElement = document.querySelector('#usernameElement');
+const questionElement = document.querySelector('#questionElement');
+const fileElement = document.querySelector("#fileElement");
 
 function updateDB(event){
     event.preventDefault()
     const name        = usernameElement.value
-    const message         = messageElement.value
+    const question     = questionElement.value
+    const files = []; // fileElement.whatever
 
     usernameElement.value = ""
-    messageElement.value  = ""
-
-    console.log(username + " : " + message)
+    questionElement.value  = ""
 
     //Update database here
     const rowData = {
-        NAME: username,
-        MESSAGE: message
+        name: name,
+        question: question,
+        forum: forumName,
+        files: files,
     }
     database.push(rowData)
 }
-
-
-const database = firebase.database().ref();
-// add an object to the database, we do:
-// database.push({name: "Julian", age: "Nun ur biz"});
 
 // do something with each object in our dataset
 database.on("child_added", doSomethingWithData);
 
  function doSomethingWithData(objectReference){
-     const object = objectReference.val();
-    // displayObjectSomewhere(object)
+    const object = objectReference.val();
+    if(object.forum != forumName){return;}
+    console.log(object);
  }
