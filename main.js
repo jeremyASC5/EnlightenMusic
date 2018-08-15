@@ -47,11 +47,14 @@ function updateDB(event){
     database.push(rowData)
 }
 
+const allMessagesContainer = document.querySelector(".allMessages_container")
 // do something with each object in our dataset
 database.on("child_added", doSomethingWithData);
 
  function doSomethingWithData(objectReference){
     const object = objectReference.val();
     if(object.forum != forumName){return;}
-    console.log(object);
+    const entryDiv = document.createElement("div").className("entryDiv")
+    const nameContainer = document.createElement("p").className("nameContainer")
+    
  }
