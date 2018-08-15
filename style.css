@@ -157,6 +157,8 @@ ul{
         margin-right: auto;
     }
 }
+
+
 /*STYLESHEET SPECIFIC TO 'THEORY' PAGE*/
 
 #body-Theory{
@@ -165,5 +167,46 @@ ul{
 }
 
 .mdl-textfield__input{
-    align-content:center;
+    width:100%;
+    height:100%; 
+    -moz-box-sizing: border-box;    /* For Firefox */
+    -webkit-box-sizing: border-box; /* For Safari */
+    box-sizing: border-box;         /* For IE and modern versions of Chrome */
+    /*width: 100vw;
+    height: 50vh;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: whitesmoke;
+    border: 8px solid rgba(128, 0, 128, 0.7);
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    box-sizing: border-box; */
+}
+
+.textbox{grid-area: textbox;}
+.username{grid-area: username;}
+.purposeForWriting{grid-area: purposeForWriting;}
+.submit{grid-area: submit;}
+.attachFile{grid-area: attachFile;}
+
+.grid_container{
+    display: grid;
+    grid-template-areas:
+    'textbox textbox texbox'
+    'textbox textbox texbox'
+    'username username submit'
+    'purposeForWriting purposeForWriting submit'
+    'attachFile attachFile submit';
+    grid-gap: 10px;
+    background-color: rgba(255, 215, 0, 1);
+    padding: 10px;
+}
+
+
+.submitButton:hover{
+    cursor: pointer;
 }

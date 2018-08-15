@@ -14,51 +14,38 @@ for(const sublist of sublists){
     }
     title.addEventListener("click", toggleDisplay)
 }
+//end dropdown menu
 
-const usernameElement = document.getElementById("username");
-const messageElement = document.getElementById("message");
-const button = document.getElementById("submitButton");
-const allMessages = document.getElementById("allMessages");
+const submitButton = document.querySelectorAll("submitButton")
+submitButton.addEventListener("click", updateDB)
 
-button.addEventListener("click",updateDB);
-
-const database = firebase.database().ref();
-
-//Set database object here
-
-
-/**
- * Updates the database with the username and message.
- */
 function updateDB(event){
-    event.preventDefault();
-    const username        = usernameElement.value;
-    const message         = messageElement.value;
+    event.preventDefault()
+    const name        = usernameElement.value
+    const message         = messageElement.value
 
-    usernameElement.value = "";
-    messageElement.value  = "";
+    usernameElement.value = ""
+    messageElement.value  = ""
 
-    console.log(username + " : " + message);
+    console.log(username + " : " + message)
 
     //Update database here
     const rowData = {
         NAME: username,
         MESSAGE: message
     }
-    database.push(rowData);
-
+    database.push(rowData)
 }
 
-// Set database "child_added" event listener here
-database.on("child_added", addMessageToBoard);
 
- function addMessageToBoard(rowDataRef){
-     const row = rowDataRef.val();
-     const name = row.NAME;
-     const message = row.MESSAGE;
+const database = firebase.database().ref();
+// add an object to the database, we do:
+// database.push({name: "Julian", age: "Nun ur biz"});
 
-     const paragraph = document.createElement("p");
-     paragraph.innerText = name + " : " + message;
-     allMessages.appendChild(paragraph);
+// do something with each object in our dataset
+database.on("child_added", doSomethingWithData);
 
+ function doSomethingWithData(objectReference){
+     const object = objectReference.val();
+    // displayObjectSomewhere(object)
  }
