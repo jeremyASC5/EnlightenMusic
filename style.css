@@ -210,3 +210,39 @@ grid_container>div{}
 .submitButton:hover{
     cursor: pointer;
 }
+
+
+#questionElement{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border-color: purple;
+    box-shadow: purple;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+#fileElement{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+label{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+
+
+#usernameElement{
+    border-radius: 8px;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+
+.submitButton{
+    border-radius: 4px;
+    border-bottom-style: inset;
+    border-color: purple;
+    background-color: white;
+    font-style: oblique;
+    font-family:'Cormorant Garamond', serif; 
+    font-weight: bold;
+   
+}
