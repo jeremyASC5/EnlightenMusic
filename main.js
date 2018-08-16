@@ -32,7 +32,7 @@ function updateDB(event){
     event.preventDefault()
     const name        = usernameElement.value
     const question     = questionElement.value
-    const files = []; // fileElement.whatever
+    const files = fileElement.value
 
     usernameElement.value = ""
     questionElement.value  = ""
@@ -47,14 +47,54 @@ function updateDB(event){
     database.push(rowData)
 }
 
-const allMessagesContainer = document.querySelector(".allMessages_container")
+const allMessagesContainer = document.querySelector("#allMessages_container")
+allMessagesContainer.style.width = "80%"
+allMessagesContainer.style.marginLeft = "10%"
+allMessagesContainer.style.marginRight = "10%"
+allMessagesContainer.style.marginTop = "5%"
+allMessagesContainer.style.marginBottom = "20%"
+allMessagesContainer.style.display = "flex"
+allMessagesContainer.style.flexDirection = "column-reverse"
+allMessagesContainer.style.backgroundColor = "rgba(128, 0, 128, 0.7)"
+allMessagesContainer.style.border = "none"
+allMessagesContainer.style.padding = "2%"
+allMessagesContainer.style.borderRadius = "8px"
 // do something with each object in our dataset
 database.on("child_added", doSomethingWithData);
 
  function doSomethingWithData(objectReference){
     const object = objectReference.val();
-    if(object.forum != forumName){return;}
-    const entryDiv = document.createElement("div").className("entryDiv")
-    const nameContainer = document.createElement("p").className("nameContainer")
+    if(object.forum !== forumName){return;}
+    const entryDiv = document.createElement("div")
+    entryDiv.className = "entryDiv"
+    allMessagesContainer.appendChild(entryDiv)
+    const br = document.createElement("br")
+
     
+    const nameContainer = document.createElement("p")
+    nameContainer.className = "nameContainer"
+    nameContainer.innerHTML = `Name: ${object.name}`
+    nameContainer.style.display = "block"
+    nameContainer.style.color = "whitesmoke"
+    nameContainer.style.borderBottom = "3px solid whitesmoke"
+    entryDiv.appendChild(nameContainer)
+
+    entryDiv.appendChild(br)
+
+    const questionContainer = document.createElement("p")
+    questionContainer.className = "questionContainer"
+    questionContainer.innerHTML = `Question: ${object.question}`
+    questionContainer.style.display = "block"
+    questionContainer.style.color = "whitesmoke"
+    questionContainer.style.wordWrap = "break-word"
+    entryDiv.appendChild(questionContainer)
+
+    entryDiv.appendChild(br)
+
+    const fileContainer = document.createElement("p")
+    fileContainer.innerHTML = files
+    fileContainer.style.display = "block"
+    fileConainer.style.color = "whitesmoke"
+    entryDiv.appendChild(fileContainer)
+
  }

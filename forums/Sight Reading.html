@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../favicon.ico" size="32x32">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
+    <!--Firebase snippet-->
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCMfZFnXj4714MOAK9GwPK_A60UvyzTvmQ",
+        authDomain: "enlightenmusic-a17e4.firebaseapp.com",
+        databaseURL: "https://enlightenmusic-a17e4.firebaseio.com",
+        projectId: "enlightenmusic-a17e4",
+        storageBucket: "enlightenmusic-a17e4.appspot.com",
+        messagingSenderId: "546392499971"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!--End firebase snippet-->
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer src="../main.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <title>EnlightenMusic</title>
+</head>
+<body>
+
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title" style="color: gold">𝄞nlightenMusic</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer">
+        
+      </div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+      </nav>
+    </div>
+  </header>
+  
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Subjects</span>
+    <nav class="mdl-navigation">
+      <ul>
+        <li><a class="mdl-navigation__link" href="index.html">Homepage</a></li>
+        <li><a class="mdl-navigation__link" href="Composition.html">Composition</a></li>
+        <li class="hasSublist">
+          <a class="mdl-navigation__link" href="">Learning an Instrument</a>
+          <ul>        
+            <li><a class="mdl-navigation__link" href="Woodwinds.html">Woodwinds</a></li>
+            <li><a class="mdl-navigation__link" href="Brass.html">Brass</a></li>
+            <li><a class="mdl-navigation__link" href="Percussion.html">Percussion</a></li>
+            <li><a class="mdl-navigation__link" href="Strings.html">Strings</a></li>
+            <li><a class="mdl-navigation__link" href="Keyboards.html">Keyboards</a></li>
+          </ul>  
+        </li>                                                
+        <li><a class="mdl-navigation__link" href="Technique.html">Technique</a></li>
+        <li class="hasSublist">
+          <a class="mdl-navigation__link" href="">Sheet Music</a>
+          <ul>
+            <li><a class="mdl-navigation__link" href="How%20to%20Read.html">How to Read</a></li>
+            <li><a class="mdl-navigation__link" href="Sight%20Reading%20Tips.html">Sight Reading Tips</a></li>
+          </ul>
+        </li>
+        <li><a class="mdl-navigation__link" href="Music%20History.html">Music History</a></li>
+        <li><a class="mdl-navigation__link" href="Miscellaneous.html">Miscellaneous</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+<main class="mdl-layout__content">
+    <h class="pageHeader" id="mainHeader"></h>
+    <hr style="border-color: whitesmoke">
+    <form class="grid_container">
+        <div class="username"><div class="singleInput">
+            <label for="name">Your name:</label>
+            <input class="name" type="text" id="usernameElement">
+          </div></div>
+        <div class="textbox"><div class="mdl-textfield mdl-js-textfield">
+            <textarea id="questionElement" class="mdl-textfield__input" type="text" rows= "5" id="questionBox" placeholder="Ex: What is X?"></textarea>
+            <label class="mdl-textfield__label" for="questionBox"></label>
+          </div></div>
+        <div class="attachFile">
+          <input id="fileElement" type="file" class="attachFile" multiple>
+        </div>
+        <div class="submit"><input type="submit" class="submitButton" value = "Submit"></div>
+    </form>
+
+    <div id="allMessages_container"></div>
+</main>
+</div>
+
+</body>
+</html>

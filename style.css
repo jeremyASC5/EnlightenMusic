@@ -58,7 +58,7 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    padding: 20px;
+
     padding-bottom: 40px;
 }
 
@@ -67,19 +67,22 @@ body{
     text-align: center;
     color: whitesmoke;
     margin-bottom: 30px;
+    line-height: 45px;
 }
 .profilePic{
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 250px;
     height: 250px;
+    padding-left: 10px;
+    padding-right: 48px;
 }
 
 .meetJeremy_container{
     display: block;
     color: whitesmoke;
     font-family: 'Cormorant Garamond', serif;
-    padding: 30px;
+    padding: 5px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -100,7 +103,7 @@ body{
     display: block;
     color: whitesmoke;
     font-family: 'Cormorant Garamond', serif;
-    padding: 30px;
+    padding: 5px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -202,15 +205,15 @@ body {
     'purposeForWriting purposeForWriting submit'
     'attachFile attachFile submit';
     grid-gap: 10px;
-    background-color: rgba(255, 215, 0, 1);
+    background-color: rgb(255, 215, 0,);
     padding: 10px;
+    justify-content: center;
 }
 grid_container>div{}
 
 .submitButton:hover{
     cursor: pointer;
 }
-
 
 #questionElement{
     background-color: whitesmoke;
