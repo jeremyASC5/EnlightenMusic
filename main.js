@@ -31,11 +31,12 @@ const fileElement = document.querySelector("#fileElement");
 function updateDB(event){
     event.preventDefault()
     const name        = usernameElement.value
-    const question     = questionElement.value
-    const files = fileElement.value
+    const question    = questionElement.value
+    const files       = fileElement.value
 
     usernameElement.value = ""
     questionElement.value  = ""
+    fileElement.value = []
 
     //Update database here
     const rowData = {
@@ -77,22 +78,25 @@ database.on("child_added", doSomethingWithData);
     nameContainer.style.display = "block"
     nameContainer.style.color = "whitesmoke"
     nameContainer.style.borderBottom = "3px solid whitesmoke"
+    nameContainer.style.wordWrap = "break-word"
+    nameContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(nameContainer)
 
     entryDiv.appendChild(br)
 
     const questionContainer = document.createElement("p")
     questionContainer.className = "questionContainer"
-    questionContainer.innerHTML = `Question: ${object.question}`
+    questionContainer.innerHTML = `Message: ${object.question}`
     questionContainer.style.display = "block"
     questionContainer.style.color = "whitesmoke"
     questionContainer.style.wordWrap = "break-word"
+    questionContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(questionContainer)
 
     entryDiv.appendChild(br)
 
     const fileContainer = document.createElement("p")
-    fileContainer.innerHTML = files
+    fileContainer.innerHTML = `File(s): ${object.files}`
     fileContainer.style.display = "block"
     fileConainer.style.color = "whitesmoke"
     entryDiv.appendChild(fileContainer)

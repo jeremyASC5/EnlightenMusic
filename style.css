@@ -202,10 +202,9 @@ body {
     'textbox textbox texbox'
     'textbox textbox texbox'
     'username username submit'
-    'purposeForWriting purposeForWriting submit'
     'attachFile attachFile submit';
     grid-gap: 10px;
-    background-color: rgb(255, 215, 0,);
+    background-color: rgb(255, 215, 0);
     padding: 10px;
     justify-content: center;
 }
@@ -217,6 +216,8 @@ grid_container>div{}
 
 #questionElement{
     background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     border-color: purple;
     box-shadow: purple;
@@ -248,4 +249,8 @@ label{
     font-family:'Cormorant Garamond', serif; 
     font-weight: bold;
    
+}
+
+file{
+    font-family:'Cormorant Garamond', serif; 
 }

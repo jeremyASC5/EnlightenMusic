@@ -12,7 +12,7 @@ const fileNames = [
     "How to Read",
     "Sight Reading",
     "Music History",
-    "Miscellaneous",
+    "Miscellaneous"
 ];
 
 for(const name of fileNames){
