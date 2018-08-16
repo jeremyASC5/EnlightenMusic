@@ -96,7 +96,7 @@ database.on("child_added", doSomethingWithData);
     entryDiv.appendChild(br)
 
     const fileContainer = document.createElement("p")
-    fileContainer.innerHTML = files
+    fileContainer.innerHTML = `File(s): ${object.files}`
     fileContainer.style.display = "block"
     fileConainer.style.color = "whitesmoke"
     entryDiv.appendChild(fileContainer)
