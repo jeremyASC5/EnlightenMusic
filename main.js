@@ -32,18 +32,18 @@ function updateDB(event){
     event.preventDefault()
     const name        = usernameElement.value
     const question    = questionElement.value
-    const files       = fileElement.value
+    const link       = fileElement.value
 
     usernameElement.value = ""
     questionElement.value  = ""
-    fileElement.value = []
+    fileElement.value = ""
 
     //Update database here
     const rowData = {
         name: name,
         question: question,
         forum: forumName,
-        files: files,
+        link: link,
     }
     database.push(rowData)
 }
@@ -95,10 +95,14 @@ database.on("child_added", doSomethingWithData);
 
     entryDiv.appendChild(br)
 
+    const href = document.createElement("a")
+    href.setAttribute("href", `${object.link}`)
+    href.setAttribute("target", "_blank")
+    href.innerHTML = `${object.link}`
     const fileContainer = document.createElement("p")
-    fileContainer.innerHTML = `File(s): ${object.files}`
+    fileContainer.innerHTML = `Link: ${href}`
     fileContainer.style.display = "block"
     fileConainer.style.color = "whitesmoke"
-    entryDiv.appendChild(fileContainer)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    entryDiv.appendChild(fileContainer)
 
  }
