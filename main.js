@@ -104,6 +104,7 @@ database.on("child_added", doSomethingWithData);
     fileContainer.innerHTML = `Link: ${a}`
     fileContainer.style.display = "block"
     fileConainer.style.color = "whitesmoke"
+    fileContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(fileContainer)
 
  }
