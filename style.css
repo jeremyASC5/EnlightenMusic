@@ -162,7 +162,7 @@ ul{
 }
 
 
-/*STYLESHEET SPECIFIC TO 'THEORY' PAGE*/
+/*STYLESHEET SPECIFIC TO 'MASTER' PAGE*/
 
 body {
     background-image:url(https://becomeabassist.com/wp-content/uploads/2013/05/sheet_music.jpg);
@@ -232,9 +232,21 @@ label{
     font-family:'Cormorant Garamond', serif;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
 
 #usernameElement{
+=======
+#fileElement{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: bold;        
+}
+.entryDiv{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    border: 3px solid whitesmoke;
+>>>>>>> 3f9cf7ac44fc91b17fac1a83a17e9b2f1613ad0a
     border-radius: 8px;
     font-family:'Cormorant Garamond', serif;
     font-weight: bold;

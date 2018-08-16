@@ -32,18 +32,18 @@ function updateDB(event){
     event.preventDefault()
     const name        = usernameElement.value
     const question    = questionElement.value
-    const files       = fileElement.value
+    const link       = fileElement.value
 
     usernameElement.value = ""
     questionElement.value  = ""
-    fileElement.value = []
+    fileElement.value = ""
 
     //Update database here
     const rowData = {
         name: name,
         question: question,
         forum: forumName,
-        files: files,
+        link: link,
     }
     database.push(rowData)
 }
@@ -82,7 +82,7 @@ database.on("child_added", doSomethingWithData);
     nameContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(nameContainer)
 
-    entryDiv.appendChild(br)
+    //entryDiv.appendChild(br)
 
     const questionContainer = document.createElement("p")
     questionContainer.className = "questionContainer"
@@ -93,12 +93,14 @@ database.on("child_added", doSomethingWithData);
     questionContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(questionContainer)
 
-    entryDiv.appendChild(br)
-
-    const fileContainer = document.createElement("p")
-    fileContainer.innerHTML = `File(s): ${object.files}`
-    fileContainer.style.display = "block"
-    fileConainer.style.color = "whitesmoke"
-    entryDiv.appendChild(fileContainer)
-
+    //entryDiv.appendChild(br)
+    if(object.hasOwnProperty("link") && object.link !== ""){
+        const a = document.createElement("a")
+        a.setAttribute("href", `${object.link}`)
+        a.setAttribute("target", "_blank")
+        a.innerHTML = `${object.link}`
+        a.style.fontFamily = "'Cormorant Garamond', serif"
+        a.style.color = "whitesmoke"
+        entryDiv.appendChild(a)
+    }
  }
