@@ -99,6 +99,6 @@ database.on("child_added", doSomethingWithData);
     fileContainer.innerHTML = `File(s): ${object.files}`
     fileContainer.style.display = "block"
     fileConainer.style.color = "whitesmoke"
-    entryDiv.appendChild(fileContainer)
+    entryDiv.appendChild(fileContainer)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
  }
