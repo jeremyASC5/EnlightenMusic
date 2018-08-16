@@ -31,11 +31,12 @@ const fileElement = document.querySelector("#fileElement");
 function updateDB(event){
     event.preventDefault()
     const name        = usernameElement.value
-    const question     = questionElement.value
-    const files = fileElement.value
+    const question    = questionElement.value
+    const files       = fileElement.value
 
     usernameElement.value = ""
     questionElement.value  = ""
+    fileElement.value = []
 
     //Update database here
     const rowData = {
