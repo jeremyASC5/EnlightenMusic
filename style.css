@@ -87,7 +87,6 @@ body{
     margin-right: 10px;
 }
 
-#jeremyProfilePic{}
 #meetJeremy{
     color: whitesmoke;
     text-align: justify;
@@ -107,7 +106,6 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
-#joshuaProfilePic{}
 #meetJoshua{
     color: whitesmoke;
     text-align: justify;
@@ -175,19 +173,6 @@ body {
     -moz-box-sizing: border-box;    /* For Firefox */
     -webkit-box-sizing: border-box; /* For Safari */
     box-sizing: border-box;         /* For IE and modern versions of Chrome */
-    /*width: 100vw;
-    height: 50vh;
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    background-color: whitesmoke;
-    border: 8px solid rgba(128, 0, 128, 0.7);
-    overflow-y: scroll;
-    overflow-wrap: break-word;
-    box-sizing: border-box; */
 }
 
 .textbox{grid-area: textbox;}
@@ -199,19 +184,27 @@ body {
 .grid_container{
     display: grid;
     grid-template-areas:
-    'textbox textbox texbox'
-    'textbox textbox texbox'
-    'username username submit'
-    'attachFile attachFile submit';
+    'textbox textbox'
+    'textbox textbox'
+    'username username'
+    'attachFile attachFile'
+    'submit submit';
     grid-gap: 10px;
     background-color: rgb(255, 215, 0);
     padding: 10px;
     justify-content: center;
 }
-grid_container>div{}
-
+.submitButton{
+    height: 100%;
+    width: 100%;
+    -moz-box-sizing: border-box;    /* For Firefox */
+    -webkit-box-sizing: border-box; /* For Safari */
+    box-sizing: border-box;         /* For IE and modern versions of Chrome */
+}
 .submitButton:hover{
     cursor: pointer;
+    background-color: rgba(128, 0, 128, 0.7);
+    color: whitesmoke;
 }
 
 #questionElement{
