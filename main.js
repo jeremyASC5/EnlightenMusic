@@ -82,7 +82,7 @@ database.on("child_added", doSomethingWithData);
     nameContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(nameContainer)
 
-    entryDiv.appendChild(br)
+    //entryDiv.appendChild(br)
 
     const questionContainer = document.createElement("p")
     questionContainer.className = "questionContainer"
@@ -93,18 +93,15 @@ database.on("child_added", doSomethingWithData);
     questionContainer.style.fontFamily = "'Cormorant Garamond', serif"
     entryDiv.appendChild(questionContainer)
 
-    entryDiv.appendChild(br)
+    //entryDiv.appendChild(br)
 
     const a = document.createElement("a")
     a.setAttribute("href", `${object.link}`)
     a.setAttribute("target", "_blank")
     a.innerHTML = `${object.link}`
-    entryDiv.appendChild(a)
-    const fileContainer = document.createElement("p")
-    fileContainer.innerHTML = `Link: ${a}`
-    fileContainer.style.display = "block"
-    fileConainer.style.color = "whitesmoke"
-    fileContainer.style.fontFamily = "'Cormorant Garamond', serif"
-    entryDiv.appendChild(fileContainer)
-
+    a.style.fontFamily = "'Cormorant Garamond', serif"
+    a.style.color = "whitesmoke"
+    if(a.innerHTML !== ``){
+        entryDiv.appendChild(a)
+    }
  }
