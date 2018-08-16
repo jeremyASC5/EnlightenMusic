@@ -94,14 +94,13 @@ database.on("child_added", doSomethingWithData);
     entryDiv.appendChild(questionContainer)
 
     //entryDiv.appendChild(br)
-
-    const a = document.createElement("a")
-    a.setAttribute("href", `${object.link}`)
-    a.setAttribute("target", "_blank")
-    a.innerHTML = `${object.link}`
-    a.style.fontFamily = "'Cormorant Garamond', serif"
-    a.style.color = "whitesmoke"
-    if(a.innerHTML !== ``){
+    if(object.hasOwnProperty("link") && object.link !== ""){
+        const a = document.createElement("a")
+        a.setAttribute("href", `${object.link}`)
+        a.setAttribute("target", "_blank")
+        a.innerHTML = `${object.link}`
+        a.style.fontFamily = "'Cormorant Garamond', serif"
+        a.style.color = "whitesmoke"
         entryDiv.appendChild(a)
     }
  }
