@@ -251,3 +251,13 @@ label{
     font-weight: bold;
    
 }
+.entryDiv{
+    border: 3px solid whitesmoke;
+    border-radius: 8px;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+.attachFile{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: bold;
+}
