@@ -95,12 +95,13 @@ database.on("child_added", doSomethingWithData);
 
     entryDiv.appendChild(br)
 
-    const href = document.createElement("a")
-    href.setAttribute("href", `${object.link}`)
-    href.setAttribute("target", "_blank")
-    href.innerHTML = `${object.link}`
+    const a = document.createElement("a")
+    a.setAttribute("href", `${object.link}`)
+    a.setAttribute("target", "_blank")
+    a.innerHTML = `${object.link}`
+    entryDiv.appendChild(a)
     const fileContainer = document.createElement("p")
-    fileContainer.innerHTML = `Link: ${href}`
+    fileContainer.innerHTML = `Link: ${a}`
     fileContainer.style.display = "block"
     fileConainer.style.color = "whitesmoke"
     entryDiv.appendChild(fileContainer)
