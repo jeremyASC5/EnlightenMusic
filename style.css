@@ -227,27 +227,17 @@ grid_container>div{}
 #fileElement{
     font-family:'Cormorant Garamond', serif;
     font-weight: bold;
+    border-radius: 6px;
+
 }
 label{
     font-family:'Cormorant Garamond', serif;
     font-weight: bold;
 }
-<<<<<<< HEAD
 
 
 #usernameElement{
-=======
-#fileElement{
-    font-family:'Cormorant Garamond', serif;
-    font-weight: bold;        
-}
-.entryDiv{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 10px;
-    border: 3px solid whitesmoke;
->>>>>>> 3f9cf7ac44fc91b17fac1a83a17e9b2f1613ad0a
-    border-radius: 8px;
+    border-radius: 6px;
     font-family:'Cormorant Garamond', serif;
     font-weight: bold;
 }
@@ -261,8 +251,4 @@ label{
     font-family:'Cormorant Garamond', serif; 
     font-weight: bold;
    
-}
-
-file{
-    font-family:'Cormorant Garamond', serif; 
 }
